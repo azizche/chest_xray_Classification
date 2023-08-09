@@ -1,6 +1,6 @@
 # Chest Xray Classification
 
-A deep learning approach that reads XRay chest images and predicts whether the vest is affected by pneumonia or not using PyTorch.
+A deep learning approach that reads XRay chest images and predicts whether the chest is affected by pneumonia or not using PyTorch.
 
 ## Pneumonia vs Normal Chest Xray
 
@@ -53,7 +53,7 @@ The above code can be used for Deep Transfer Learning on any Image dataset to tr
 
 ## Some Predictions
 
-<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/predictions.png" width=300 height= 600 />
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/predictions.png" width=600 height= 300 />
 
 ## Deployed model
 
