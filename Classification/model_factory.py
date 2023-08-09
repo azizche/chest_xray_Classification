@@ -6,10 +6,10 @@ VALID_MODELS= ['alexnet','efficient_net_b7']
 def get_pretrained_model(model_name):
   device='cuda' if torch.cuda.is_available() else 'cpu'
 
-  
+
   if model_name == 'alexnet':
-    model=M.alexnet()
     weights=M.AlexNet_Weights.DEFAULT
+    model=M.alexnet(weights=weights)
     transfo=weights.transforms()
     for param in model.features.parameters():
       param.requires_grad=False
@@ -18,8 +18,8 @@ def get_pretrained_model(model_name):
       nn.Linear(in_features=9216,out_features=1)
     ).to(device)
   if model_name == 'efficient_net_b7':
-    model=M.efficientnet_b7()
     weights=M.EfficientNet_B7_Weights.DEFAULT
+    model=M.efficientnet_b7(weights=weights)
     transfo=weights.transforms()
     for param in model.features.parameters():
       param.requires_grad=False

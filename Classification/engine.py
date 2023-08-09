@@ -11,7 +11,7 @@ def training_step(model:torch.nn.Module, train_dataloader:torch.utils.data.DataL
       X,y= X.to(
         device), y.to(device)
       preds= model(X)
-     
+
       loss= loss_fn(preds,y.reshape(-1,1).float())
       train_loss+=loss
       train_acc+= (y==torch.round(torch.sigmoid(preds.squeeze()))).sum().item()/len(y)
@@ -54,7 +54,7 @@ def test_step(model:torch.nn.Module, test_dataloader:torch.utils.data.DataLoader
       for X,y in test_dataloader:
         X,y= X.to(device), y.to(device)
         preds= model(X)
-        
+
         loss= loss_fn(preds,y.reshape(-1,1).float())
         test_loss+=loss
         test_acc+= (y==torch.round(torch.sigmoid(preds.squeeze()))).sum().item()/len(y)

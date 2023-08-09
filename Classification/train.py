@@ -6,6 +6,8 @@ from engine import train
 from utils import set_seeds, create_writer
 import torch
 from torch import nn
+from pathlib import Path
+
 def training(args):
   device='cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -20,24 +22,23 @@ if __name__ == '__main__':
 
     # Training settings
     parser = argparse.ArgumentParser(description='PyTorch XrayChest Classification')
-    
-    parser.add_argument('--model_name', metavar='N',
+
+    parser.add_argument('--model_name', metavar='N',required=True,
                         help='the model for training', choices=VALID_MODELS)
 
     parser.add_argument('--batch-size', type=int, default=16, metavar='N',
                         help='input batch size for training (default: 16)')
-    parser.add_argument('--test-batch-size', type=int, default=4, metavar='N',
-                        help='input batch size for testing (default: 1000)')
+
     parser.add_argument('--epochs', type=int, default=5, metavar='N',
                         help='number of epochs to train (default: 5)')
     parser.add_argument('--lr', type=float, default=.01, metavar='LR',
                         help='learning rate (default: .01)')
-    
+
     parser.add_argument('--num_workers', type=int, default=1, metavar='W',
                         help='number of workers (default: 1)')
 
     parser.add_argument('--seed', type=int, default=1, metavar='S',
                         help='random seed (default: 1)')
-   
+
     args = parser.parse_args()
     training(args)
