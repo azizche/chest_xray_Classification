@@ -6,11 +6,11 @@ A deep learning approach that reads XRay chest images and predicts whether the v
 
 ### Pneumonia
 
-<img "https://github.com/azizche/chest_xray_Classification/blob/main/Images/pneumonia.png" width=300 height= 300/>
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/pneumonia.png" width=300 height= 300 />
 
 ### Normal
 
-<img "https://github.com/azizche/chest_xray_Classification/blob/main/Images/normal.png" width=300 height= 300/>
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/normal.png" width=300 height= 300 />
 
 ## Best model parameters
 
@@ -26,11 +26,11 @@ A deep learning approach that reads XRay chest images and predicts whether the v
 
 ## Evaluation
 
-<img "https://github.com/azizche/chest_xray_Classification/blob/main/Images/confusion_matrix.png" width=300 height= 300/>
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/confusion_matrix.png" width=300 height= 300 />
 
 ### Tensorboard accuracy tracking
 
-<img "https://github.com/azizche/chest_xray_Classification/blob/main/Images/tensorboard_visualisation.png" width=300 height= 300/>
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/tensorboard_visualisation.png" width=300 height= 300 />
 ** Test Accuracy: 96.62 %**
 
 ## DataSet
@@ -53,7 +53,7 @@ The above code can be used for Deep Transfer Learning on any Image dataset to tr
 
 ## Some Prediction
 
-<img "https://github.com/azizche/chest_xray_Classification/blob/main/Images/predictions.png" width=300 height= 300/>
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/predictions.png" width=300 height= 300 />
 
 ## Deployed model
 
