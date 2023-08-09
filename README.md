@@ -51,9 +51,9 @@ The above code can be used for Deep Transfer Learning on any Image dataset to tr
 2. A folder called runs will be created in your directory. It's an ouput created bu the SummaryWriter instance of Tensorboard that saves the train/test accuracy/loss values.
    To visualise these values, run `%load_ext tensorboard` and then `!tensorboard --logdir runs"`.
 
-## Some Prediction
+## Some Predictions
 
-<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/predictions.png" width=300 height= 300 />
+<img src="https://github.com/azizche/chest_xray_Classification/blob/main/Images/predictions.png" width=300 height= 600 />
 
 ## Deployed model
 
